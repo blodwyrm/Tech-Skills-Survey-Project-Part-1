@@ -1,0 +1,257 @@
+/* Use border-box in all elements. */
+*
+{
+  box-sizing: border-box;
+}
+
+/* Styling for the entire document */
+body
+{
+  font-family: "Bona Nova SC", serif; /* Google Font w/ Bona Nova */
+  font-weight: 400; /* Standard weight for Bona Nova */
+  font-style: normal; /* Average style */
+  font-size: 14px; /* Base font size */
+  line-height: 1.5; /* Increased line height, yet not too spaced */
+  margin: 1rem;
+  padding: 1.5rem;
+  border: 2px solid #000000;
+  color: #000000; /* Flat black non-colour to represent a more professional look */
+  background-color: #e9e9e9; /* Set off-white as background to demonstrate document style look */
+}
+
+/* Main heading style */
+h1
+{
+  font-size: 2.5rem; /* Larger heading to emphasize importance */
+  text-align: center; /* Center alignment of main heading */
+  color: #3e6b8c; /* Average blue for readability & better approach */
+  text-shadow: 3px 3px 5px rgba(118, 118, 118, 0.7); /* Shadow effect to emphasize importance */
+}
+
+h1:hover {
+  color: #b9d28b;
+
+}
+
+/* Sub-heading style */
+h2
+{
+  font-size: 1.8rem; /* Sub-heading size a bit smaller than main */
+  font-weight: 700; /* Larger than smaller sub-sub-headings to show 2nd most importance of doc */
+  color: #3e6b8c; /* Same colour as the rest of the headings */
+}
+
+h2:hover {
+  color: #b9d28b;
+
+}
+
+/* Sub-sub-heading style*/
+h3
+{
+  font-size: 1.0rem; /* A size that's between h2 and p for differentiation */
+  color: #3e6b8c; /* Same colour as the rest of the headings */
+}
+
+h3:hover {
+  color: #b9d28b;
+
+}
+
+h4
+{
+  font-size: 0.8 rem; /* A size that's between h2 and p for differentiation */
+  color: #3e6b8c; /* Same colour as the rest of the headings */
+}
+
+h4:hover {
+  color: #b9d28b;
+
+}
+
+
+h1, h2, h3, h4
+{
+  padding-bottom: 1rem; /* Apply padding below headers to provide spacing and ensure content doesn't feel cramped. */
+  transition: 1s; /* Transition to colour green for every heading. */
+}
+
+/* Styling for paragraph */
+p,li,table,form
+{
+  font-size: 0.8rem; /* Set a font size for paragraphs */
+}
+
+/* Styling for hyperlinks */
+a
+{
+  text-decoration: none; /* Having links w/o underline. */
+  color: #1964cd; /* Brighter color for links to help show difference w/ other text. */
+}
+
+a:hover {
+  color: #8aa161;
+}
+
+header section
+{
+  display: flex;
+  justify-content: space-between; /* Separates items from each other in the x-axis. */
+  height: 30rem;
+}
+
+/* Sections seperated using margins w/ borders to add minimal space. */
+main section,
+footer section
+{
+  margin: 2.5rem 0;
+  border-top: 2px solid #000000;
+}
+
+/* Form elements following a colored pattern. */
+form input,
+form textarea,
+form select
+{
+  padding: 0.1rem 0.2rem;
+  color: #3e6b8c;
+  border: 1.5px inset #000000;
+  background-color: #ffffff;
+}
+
+form fieldset
+{
+  border: none;
+}
+
+/* Button that matches the aesthetic of the page. */
+form button
+{
+  padding: 0.5rem 1rem;
+  color: #3e6b8c;
+  border: 1.5px solid #000000;
+  background-color: #ffffff;
+}
+
+/* Buttom animation when hovering. */
+form button:hover {
+  color: #000000;
+  background-color: #3e6b8c;
+}
+
+/* A thin outline w/ a blue hue to accentuate info sl */
+form input,
+form textarea
+{
+  outline: thin double #1964cd;
+}
+
+/*  HEADER  */
+header section .image-container
+{
+  align-self: flex-start; /* Places profile picture at top left corner. */
+
+  /* Creates a larger zoomed in picture. */
+  width: 20rem;
+  height: 20rem;
+}
+
+/* Profile picture rounded w/ border */
+header section .image-container img
+{
+
+  display: inline;
+  
+/* Fits the image into the container div. */
+  width: 120%;
+  height: 120%;
+  border-radius: 65%;
+  object-fit: cover; /* Preserves the original aspect ratio. */
+  object-position: 80% 150%; /* Makes the face visible moving the image down. */
+}
+
+header section .name-container
+{
+  align-self: center; /* Positions itself to the center of y-axis. */
+}
+
+header section .information-container
+{
+  align-self: flex-end; /* Positions itself to the end of y-axis. */
+}
+
+/*  SUMMARY  */
+.summary .container
+{
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  EXPERIENCE  */
+.experience .container
+{
+  display: flex;
+  justify-content: flex-start;
+}
+
+/*  APPLICATIONS  */
+.applications .container
+{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+/*  CONTACT INFO  */
+.contact .form-container
+{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.contact .text-input-container,
+.contact .select-container,
+.contact .checkbox-container
+{
+  display: flex;
+  width: 30rem;
+  margin-bottom: .2rem;
+}
+
+.contact .text-input-container label,
+.contact .select-container label
+{
+  flex-grow: 1;
+}
+
+.contact .text-input-container input,
+.contact .text-input-container textarea,
+.contact .select-container select
+{
+  width: 20rem;
+  align-content: space-between;
+}
+
+.contact .text-input-container textarea
+{
+  height: 5rem;
+  width: 26rem;
+}
+
+.contact .button-container
+{
+  display: flex;
+  justify-content: center;
+}
+
+.contact .button-container button[type=reset]
+{
+  margin-right: .2rem;
+}
+
+/* Border Style Type */
+.border-inset
+{
+  border: 2px inset #3e6b8c;
+}
