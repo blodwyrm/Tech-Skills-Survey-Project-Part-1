@@ -159,12 +159,9 @@ header section .image-container
 /* Profile picture rounded w/ border */
 header section .image-container img
 {
-
-  display: inline;
-  
-/* Fits the image into the container div. */
-  width: 120%;
-  height: 120%;
+  display: inline; /* Fits the image into the container div. */
+  width: 100%;
+  height: 100%;
   border-radius: 65%;
   object-fit: cover; /* Preserves the original aspect ratio. */
   object-position: 80% 150%; /* Makes the face visible moving the image down. */
