@@ -161,7 +161,7 @@ header section .image-container img
 {
   display: inline; /* Fits the image into the container div. */
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 65%;
   object-fit: cover; /* Preserves the original aspect ratio. */
   object-position: 80% 150%; /* Makes the face visible moving the image down. */
