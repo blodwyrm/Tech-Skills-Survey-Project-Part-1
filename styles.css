@@ -4,6 +4,11 @@
   box-sizing: border-box;
 }
 
+img {
+  height: auto;
+  width: 100%;
+}
+
 /* Styling for the entire document */
 body
 {
