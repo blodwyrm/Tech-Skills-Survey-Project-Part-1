@@ -172,8 +172,6 @@ header section .name-container
 {
   align-self: center; /* Positions itself to the center of y-axis. */
   object-fit: cover;
-  margin: 0px;
-  padding: 0px;
 }
 
 header section .information-container
