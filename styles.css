@@ -4,18 +4,6 @@
   box-sizing: border-box;
 }
 
-@media only screen and (max-width: 100%) and (orientation: landscape) {
-  .wrapper-main {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 100%) and (orientation: portrait) {
-  .wrapper-main {
-    width: 100%;
-  } 
-}
-
 /* Styling for the entire document */
 body
 {
@@ -103,6 +91,18 @@ a
 
 a:hover {
   color: #8aa161;
+}
+
+@media only screen and (max-width: 100%) and (orientation: landscape) {
+  .wrapper-main {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 100%) and (orientation: portrait) {
+  .wrapper-main {
+    width: 100%;
+  } 
 }
 
 header section
