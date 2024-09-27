@@ -170,12 +170,14 @@ header section .image-container img
 
 header section .name-container
 {
+  display: flex;
   align-self: center; /* Positions itself to the center of y-axis. */
   object-fit: contain;
 }
 
 header section .information-container
 {
+  display: flex;
   align-self: flex-end; /* Positions itself to the end of y-axis. */
   object-fit: contain;
 }
