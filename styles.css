@@ -93,18 +93,6 @@ a:hover {
   color: #8aa161;
 }
 
-@media only screen and (max-width: 100%) and (orientation: landscape) {
-  .wrapper-main {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 100%) and (orientation: portrait) {
-  .wrapper-main {
-    width: 100%;
-  } 
-}
-
 header section
 {
   display: flex;
@@ -156,6 +144,18 @@ form input,
 form textarea
 {
   outline: thin double #1964cd;
+}
+
+@media only screen and (max-width: 100%) and (orientation: landscape) {
+  .wrapper-main {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 100%) and (orientation: portrait) {
+  .wrapper-main {
+    width: 100%;
+  } 
 }
 
 /*  HEADER  */
