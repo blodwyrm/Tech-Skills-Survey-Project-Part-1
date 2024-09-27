@@ -98,6 +98,7 @@ header section
   display: flex;
   justify-content: space-between; /* Separates items from each other in the x-axis. */
   height: 30rem;
+  overflow-wrap: break-word;
 }
 
 /* Sections seperated using margins w/ borders to add minimal space. */
